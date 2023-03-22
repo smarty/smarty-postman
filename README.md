@@ -1,6 +1,6 @@
 # Examples of the Smarty APIs using Postman Collections
 
----------------------------------------------------- Under Development -------------------------------------------------------
+-------------------------------------------- Under Development -------------------------------------------
 
 Welcome to [Smarty](https://www.smarty.com), one of the fastest Address Verification and Geocoding services available! 
 
