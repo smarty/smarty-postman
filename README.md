@@ -12,6 +12,16 @@ This repository exists to help you familiarize yourself with the different APIs 
 
 To begin with, click [this link](https://www.smarty.com/pricing/choose-your-plan) to get started setting up a Smarty account. If you already have an account with us, [click here](https://www.smarty.com/login) and sign in using your credentials. If you don't want to purchase a particular service subscription at this time, feel free to sign up for the 30 day trial but be aware that you will only have access to the first API in the collection.
 
+### **Getting Auth-ID and Auth-Token**
+
+Now that you've successfully created an account (or logged in), you should be at your Dashboard. If for some reason you're not and you're on the main page, click the tab that says "Account" in the upper right. Now that we're all on the same page, there are a couple of values that you'll need later in this process, so remember where to get these values. 
+
+The first two can be found under the "API Keys" tab on the left-hand side of the screen. In this section, at the bottom of the screen, there should be a section that says "auto-generated" and contains an "Auth ID" and "Auth Token". These values serve as identification and authentication for you and give you access to whatever plan you purchased.
+
+The third value that you'll want to take note of is under the "Subscriptions" tab on the left side of the screen. In this tab, you will find the different services that you've purchased. As part of these services, there is a license that is associated with each service. 
+
+
+
 
 Click the button below to get started. Once a popup appears asking if you'd like to fork the repository, press the button that says fork.
 
