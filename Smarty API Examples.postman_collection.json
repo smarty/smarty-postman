@@ -1,0 +1,1138 @@
+{
+	"info": {
+		"_postman_id": "872d9849-4309-44b4-8be5-5a33cd0abdc1",
+		"name": "Smarty API Examples",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26425577"
+	},
+	"item": [
+		{
+			"name": "US Street Address API",
+			"item": [
+				{
+					"name": "Single Address",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-street.api.smartystreets.com",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-street.{{url}}/street-address?auth-id={{auth-id}}&auth-token={{auth-token}}&license={{license}}&street=2335+S+State+St&city=Provo&state=UT&candidates=2&match=enhanced",
+							"protocol": "https",
+							"host": [
+								"us-street",
+								"{{url}}"
+							],
+							"path": [
+								"street-address"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "{{license}}"
+								},
+								{
+									"key": "input_id",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "street",
+									"value": "2335+S+State+St"
+								},
+								{
+									"key": "street2",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "secondary",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "Provo"
+								},
+								{
+									"key": "state",
+									"value": "UT"
+								},
+								{
+									"key": "zipcode",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "lastline",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "adressee",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "urbanization",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "candidates",
+									"value": "2"
+								},
+								{
+									"key": "match",
+									"value": "enhanced"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single Address With Rooftop Geocoding",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-street.api.smartystreets.com",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-street.{{url}}/street-address?auth-id={{auth-id}}&auth-token={{auth-token}}&license=us-rooftop-geocoding-cloud&street=2335+S+State+St&city=Provo&state=UT&candidates=10&match=enhanced",
+							"protocol": "https",
+							"host": [
+								"us-street",
+								"{{url}}"
+							],
+							"path": [
+								"street-address"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "us-rooftop-geocoding-cloud"
+								},
+								{
+									"key": "input_id",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "street",
+									"value": "2335+S+State+St"
+								},
+								{
+									"key": "street2",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "secondary",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "Provo"
+								},
+								{
+									"key": "state",
+									"value": "UT"
+								},
+								{
+									"key": "zipcode",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "lastline",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "adressee",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "urbanization",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "candidates",
+									"value": "10"
+								},
+								{
+									"key": "match",
+									"value": "enhanced"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Multiple Addresses",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8",
+								"type": "text"
+							},
+							{
+								"key": "Host",
+								"value": "us-street.api.smartystreets.com",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t{\n\t\t\"street\":\"1 Santa Claus\",\n\t\t\"city\":\"North Pole\",\n\t\t\"state\":\"AK\",\n\t\t\"candidates\":10\n\t},\n\t{\n\t\t\"addressee\":\"Apple Inc\",\n\t\t\"street\":\"1 infinite loop\",\n\t\t\"city\":\"cupertino\",\n\t\t\"state\":\"CA\",\n\t\t\"zipcode\":\"95014\",\n\t\t\"candidates\":10\n\t}\n]"
+						},
+						"url": {
+							"raw": "https://us-street.{{url}}/street-address?auth-id={{auth-id}}&auth-token={{auth-token}}&license={{license}}",
+							"protocol": "https",
+							"host": [
+								"us-street",
+								"{{url}}"
+							],
+							"path": [
+								"street-address"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "{{license}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "[https://www.smarty.com/docs/cloud/us-street-api](https://www.smarty.com/docs/cloud/us-street-api)"
+		},
+		{
+			"name": "US ZIP Code API",
+			"item": [
+				{
+					"name": "Single Input",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-zipcode.api.smartystreets.com",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-zipcode.{{url}}/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&zipcode=84601&city&state",
+							"protocol": "https",
+							"host": [
+								"us-zipcode",
+								"{{url}}"
+							],
+							"path": [
+								"lookup"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "zipcode",
+									"value": "84601"
+								},
+								{
+									"key": "input_id",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": null
+								},
+								{
+									"key": "state",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Multiple Inputs",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json; charset=utf-8",
+								"type": "text"
+							},
+							{
+								"key": "Host",
+								"value": "us-zipcode.api.smartystreets.com",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t{\n\t\t\"city\":\"North Pole\",\n\t\t\"state\":\"AK\"\n\t},\n\t{\n\t\t\"zipcode\":\"12345\"\n\t},\n\t{\n\t\t\"city\":\"cupertino\",\n\t\t\"state\":\"CA\",\n\t\t\"zipcode\":\"95014\"\n\t}\n]"
+						},
+						"url": {
+							"raw": "https://us-zipcode.{{url}}/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}",
+							"protocol": "https",
+							"host": [
+								"us-zipcode",
+								"{{url}}"
+							],
+							"path": [
+								"lookup"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "[https://www.smarty.com/docs/cloud/us-zipcode-api](https://www.smarty.com/docs/cloud/us-zipcode-api)"
+		},
+		{
+			"name": "US Autocomplete Pro API",
+			"item": [
+				{
+					"name": "Basic Address Autocomplete",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Refer",
+								"value": "YOUR_REFERER",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "us-autocomplete-pro.api.smartystreets.com",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-autocomplete-pro.{{url}}/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&license=us-autocomplete-pro-cloud&search=123+mai&include_only_states=ALLSTATES&prefer_geolocation=none",
+							"protocol": "https",
+							"host": [
+								"us-autocomplete-pro",
+								"{{url}}"
+							],
+							"path": [
+								"lookup"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "us-autocomplete-pro-cloud"
+								},
+								{
+									"key": "key",
+									"value": "YOUR_EMBEDDED_KEY",
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": "123+mai"
+								},
+								{
+									"key": "max_results",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "include_only_cities",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "include_only_states",
+									"value": "ALLSTATES"
+								},
+								{
+									"key": "include_only_zio_codes",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "exclude_states",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "prefer_cities",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "prefer_states",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "prefer_zip_codes",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "prefer_ratio",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "prefer_geolocation",
+									"value": "none"
+								},
+								{
+									"key": "selected",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "source",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Embedded Key",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Referer",
+								"value": "YOUR_REFERER",
+								"type": "text"
+							},
+							{
+								"key": "Host",
+								"value": "us-autocomplete-pro.api.smartystreets.com",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-autocomplete-pro.{{url}}/lookup?key=YOUR_EMBEDDED_KEY&search=123+mai&include_only_states=ALLSTATES&prefer_geolocation=none",
+							"protocol": "https",
+							"host": [
+								"us-autocomplete-pro",
+								"{{url}}"
+							],
+							"path": [
+								"lookup"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}",
+									"disabled": true
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}",
+									"disabled": true
+								},
+								{
+									"key": "license",
+									"value": "us-autocomplete-pro-cloud",
+									"disabled": true
+								},
+								{
+									"key": "key",
+									"value": "YOUR_EMBEDDED_KEY"
+								},
+								{
+									"key": "search",
+									"value": "123+mai"
+								},
+								{
+									"key": "max_results",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "include_only_cities",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "include_only_states",
+									"value": "ALLSTATES"
+								},
+								{
+									"key": "include_only_zio_codes",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "exclude_states",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "prefer_cities",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "prefer_states",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "prefer_zip_codes",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "prefer_ratio",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "prefer_geolocation",
+									"value": "none"
+								},
+								{
+									"key": "selected",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "source",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Secondary Expansion",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-autocomplete-pro.api.smartystreets.com",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-autocomplete-pro.{{url}}/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&license=us-autocomplete-pro-cloud&search=123+mai&prefer_states=ut&selected=123+N+Main+St+Apt+(22)+Logan+UT+84321",
+							"protocol": "https",
+							"host": [
+								"us-autocomplete-pro",
+								"{{url}}"
+							],
+							"path": [
+								"lookup"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "us-autocomplete-pro-cloud"
+								},
+								{
+									"key": "key",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "search",
+									"value": "123+mai"
+								},
+								{
+									"key": "max_results",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "include_only_cities",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "include_only_states",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "include_only_zio_codes",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "exclude_states",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "prefer_cities",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "prefer_states",
+									"value": "ut"
+								},
+								{
+									"key": "prefer_zip_codes",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "prefer_ratio",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "prefer_geolocation",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "selected",
+									"value": "123+N+Main+St+Apt+(22)+Logan+UT+84321"
+								},
+								{
+									"key": "source",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "[https://www.smarty.com/docs/cloud/us-autocomplete-pro-api](https://www.smarty.com/docs/cloud/us-autocomplete-pro-api)"
+		},
+		{
+			"name": "US Extract API",
+			"item": [
+				{
+					"name": "Address Extraction",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "charset",
+								"value": "utf-8",
+								"type": "text"
+							},
+							{
+								"key": "Host",
+								"value": "us-extract.api.smartystreets.com",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "There are addresses everywhere.\n1109 Ninth 85007\nSmarty can find them.\n3785 Las Vegs Av.\nLos Vegas, Nevada\nThat is all."
+						},
+						"url": {
+							"raw": "https://us-extract.{{url}}/?auth-id={{auth-id}}&auth-token={{auth-token}}&match=enhanced",
+							"protocol": "https",
+							"host": [
+								"us-extract",
+								"{{url}}"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "html",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "aggressive",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "addr_line_breaks",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "addr_per_line",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "match",
+									"value": "enhanced"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "[https://www.smarty.com/docs/cloud/us-extract-api](https://www.smarty.com/docs/cloud/us-extract-api)"
+		},
+		{
+			"name": "US Reverse Geocoding API",
+			"item": [
+				{
+					"name": "Reverse Geocoding",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Referer",
+								"value": "YOUR_REFERER",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Host",
+								"value": "us-reverse-geo.api.smartystreets.com",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://us-reverse-geo.{{url}}/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&license=us-reverse-geocoding-cloud&latitude=40.202583&longitude=-111.62196",
+							"protocol": "https",
+							"host": [
+								"us-reverse-geo",
+								"{{url}}"
+							],
+							"path": [
+								"lookup"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "us-reverse-geocoding-cloud"
+								},
+								{
+									"key": "key",
+									"value": "YOUR_EMBEDED_KEY",
+									"disabled": true
+								},
+								{
+									"key": "latitude",
+									"value": "40.202583"
+								},
+								{
+									"key": "longitude",
+									"value": "-111.62196"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "[https://www.smarty.com/docs/cloud/us-reverse-geo-api](https://www.smarty.com/docs/cloud/us-reverse-geo-api)"
+		},
+		{
+			"name": "International Street Address API",
+			"item": [
+				{
+					"name": "Single International Address",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "international-street.api.smartystreets.com",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://international-street.{{url}}/verify?auth-id={{auth-id}}&auth-token={{auth-token}}&country=Brazil&address1=Rua+Padre+Antonio+D%27Angelo+121&address2=Casa+Verde",
+							"protocol": "https",
+							"host": [
+								"international-street",
+								"{{url}}"
+							],
+							"path": [
+								"verify"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "input_id",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "country",
+									"value": "Brazil",
+									"description": "Required"
+								},
+								{
+									"key": "geocode",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "language",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "freeform",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "address1",
+									"value": "Rua+Padre+Antonio+D%27Angelo+121",
+									"description": "Required - First line of address"
+								},
+								{
+									"key": "address2",
+									"value": "Casa+Verde",
+									"description": "Second line of address (if any)"
+								},
+								{
+									"key": "address3",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "address4",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "organization",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "locality",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "administrative_area",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "postal_code",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "license",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Geocode International Address",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "international-street.api.smartystreets.com",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://international-street.{{url}}/verify?auth-id={{auth-id}}&auth-token={{auth-token}}&country=Brazil&geocode=true&address1=Rua+Padre+Antonio+D%27Angelo+121&address2=Casa+Verde&postal_code=02516-040",
+							"protocol": "https",
+							"host": [
+								"international-street",
+								"{{url}}"
+							],
+							"path": [
+								"verify"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "input_id",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "country",
+									"value": "Brazil",
+									"description": "Required"
+								},
+								{
+									"key": "geocode",
+									"value": "true"
+								},
+								{
+									"key": "language",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "freeform",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "address1",
+									"value": "Rua+Padre+Antonio+D%27Angelo+121",
+									"description": "Required - First line of address"
+								},
+								{
+									"key": "address2",
+									"value": "Casa+Verde",
+									"description": "Second line of address (if any)"
+								},
+								{
+									"key": "address3",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "address4",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "organization",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "locality",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "administrative_area",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "postal_code",
+									"value": "02516-040"
+								},
+								{
+									"key": "license",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "[https://www.smarty.com/docs/cloud/international-street-api](https://www.smarty.com/docs/cloud/international-street-api)"
+		},
+		{
+			"name": "International Address Autocomplete API",
+			"item": [
+				{
+					"name": "Single International Address Autocomplete",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": " us-autocomplete-pro.api.smartystreets.com",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://international-autocomplete.{{url}}/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&country=FRA&search=Louis-country&include_only_locality=Paris",
+							"protocol": "https",
+							"host": [
+								"international-autocomplete",
+								"{{url}}"
+							],
+							"path": [
+								"lookup"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "key",
+									"value": "YOUR_EMBEDDED_KEY",
+									"disabled": true
+								},
+								{
+									"key": "country",
+									"value": "FRA",
+									"description": "Required"
+								},
+								{
+									"key": "search",
+									"value": "Louis-country",
+									"description": "Required"
+								},
+								{
+									"key": "max_results",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "distance",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "geolocation",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "include_only_administrative_area",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "include_only_locality",
+									"value": "Paris"
+								},
+								{
+									"key": "include_only_postal_code",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "latitude",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "longitude",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "[https://www.smarty.com/docs/cloud/international-address-autocomplete-api](https://www.smarty.com/docs/cloud/international-address-autocomplete-api)"
+		}
+	]
+}
