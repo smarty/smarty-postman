@@ -33,6 +33,7 @@ The Smarty Postman collection uses [Postman environment variables](https://learn
     - `auth-token`
 
 ![image](https://user-images.githubusercontent.com/62493355/228653244-8cf19b64-2a4c-4b7d-9a51-5c313880903c.png)
+
 6. Save your changes in the environment and start making Smarty API requests!
 
 ## Making Smarty API calls
