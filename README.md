@@ -1,29 +1,45 @@
-# Examples of the Smarty APIs using Postman Collections
+# Smarty Postman Collections
 
--------------------------------------------- Under Development -------------------------------------------
+Welcome to [Smarty](https://www.smarty.com), one of the fastest address verification and geocoding services available! This repository will help you familiarize yourself with the Smarty APIs. The following steps will guide you through creating a Smarty account and sending Smarty API requests using [Postman](https://www.postman.com/home).
 
-## **Getting Started**
+## Table of contents
+- [Getting started](#getting-started)
+    - [Configuration](#configuration)
+* [Making Smarty API calls](#making-smarty-api-calls)
 
-Welcome to [Smarty](https://www.smarty.com), one of the fastest Address Verification and Geocoding services available! 
+## Getting started
 
-This repository exists to help you familiarize yourself with the different APIs that Smarty provides through the use of [Postman](https://www.postman.com). More specifically through a [Postman Collection](https://learning.postman.com/docs/collections/collections-overview/). This document will walk you through all the necessary steps, from setting up a Smarty account, to sending your first request in Postman.
+Follow these steps to get started with the Smarty APIs:
+1. [Sign up](https://www.smarty.com/signup) with Smarty to get a set of API keys that are required for interacting with the APIs. If you already have an account, [log in](https://www.smarty.com/login) with your credentials.
+2. Click the "Run in Postman" button below. You will be directed to a new tab, then click the "Fork Collection" button. You will be required to create a [free account](https://www.postman.com/postman-account) with Postman.
 
-### **Setting up an Account**
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/26488730-bc1bdca1-977e-4c98-b36c-ca8ccc5bf6c0?action=collection%2Ffork&collection-url=entityId%3D26488730-bc1bdca1-977e-4c98-b36c-ca8ccc5bf6c0%26entityType%3Dcollection%26workspaceId%3Da9f6b737-2143-4ddc-8e2b-0344eec8aaba#?env%5BSmarty%5D=W3sia2V5IjoiYXV0aC1pZCIsInZhbHVlIjoiWU9VUl9BVVRIX0lEIiwiZW5hYmxlZCI6dHJ1ZSwidHlwZSI6InNlY3JldCIsInNlc3Npb25WYWx1ZSI6IllPVVJfQVVUSF9JRCIsInNlc3Npb25JbmRleCI6MH0seyJrZXkiOiJhdXRoLXRva2VuIiwidmFsdWUiOiJZT1VSX0FVVEhfVE9LRU4iLCJlbmFibGVkIjp0cnVlLCJ0eXBlIjoic2VjcmV0Iiwic2Vzc2lvblZhbHVlIjoiWU9VUl9BVVRIX1RPS0VOIiwic2Vzc2lvbkluZGV4IjoxfV0=)
 
-To begin with, click [this link](https://www.smarty.com/pricing/choose-your-plan) to get started setting up a Smarty account. If you already have an account with us, [click here](https://www.smarty.com/login) and sign in using your credentials. If you don't want to purchase a particular service subscription at this time, feel free to sign up for the 30 day trial but be aware that you will only have access to the first API in the collection.
+3. If you do not want to fork the collection using the "Run in Postman" button, you can download the JSON files from the postman-download folder in this repository. You will need to [import these](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-postman-data) into Postman.
+4. Once the Smarty APIs collection and the Smarty environment are imported into Postman, see the [Configuration](#configuration) section on how to configure API keys in the environment.
 
-### **Getting Auth-ID and Auth-Token**
+### Configuration
 
-Now that you've successfully created an account (or logged in), you should be at your Dashboard. If for some reason you're not and you're on the main page, click the tab that says "Account" in the upper right. Now that we're all on the same page, there are a couple of values that you'll need later in this process, so remember where to get these values. 
+The Smarty Postman collection uses [Postman environment variables](https://learning.postman.com/docs/sending-requests/variables/#variables-quick-start") to provide authentication for each API request. These steps will help you set up the necessary environment variables to use the Smarty APIs.
+1. Select the Smarty environment in the top right corner of Postman.
+2. Click the eye icon to open the environment settings.
+3. Open your Smarty account [Dashboard](https://www.smarty.com/account).
+4. Select the [API Keys](https://www.smarty.com/account/keys) section on the left side of your Smarty Dashboard.
+5. Copy your Smarty API secret key information into each "current value" field in the Smarty environment:
 
-The first two can be found under the "API Keys" tab on the left-hand side of the screen. In this section, at the bottom of the screen, there should be a section that says "auto-generated" and contains an "Auth ID" and "Auth Token". These values serve as identification and authentication for you and give you access to whatever plan you purchased.
+    - `auth-id`
+    - `auth-token`
 
-The third value that you'll want to take note of is under the "Subscriptions" tab on the left side of the screen. In this tab, you will find the different services that you've purchased. As part of these services, there is a license that is associated with each service. 
+<img width="1363" alt="image" src="https://user-images.githubusercontent.com/62493355/228653244-8cf19b64-2a4c-4b7d-9a51-5c313880903c.png">
+6. Save your changes in the environment and start making Smarty API requests!
 
+## Making Smarty API calls
 
-
-
-Click the button below to get started. Once a popup appears asking if you'd like to fork the repository, press the button that says fork.
-
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/26425577-872d9849-4309-44b4-8be5-5a33cd0abdc1?action=collection%2Ffork&collection-url=entityId%3D26425577-872d9849-4309-44b4-8be5-5a33cd0abdc1%26entityType%3Dcollection%26workspaceId%3D04903370-4703-4fcc-83d9-ccfe557f9e37#?env%5BSmarty%20-%20Live%20Deployment%5D=W3sia2V5IjoiYXV0aC1pZCIsInZhbHVlIjoiWU9VUl9BVVRIX19JRCIsImVuYWJsZWQiOnRydWUsInR5cGUiOiJzZWNyZXQiLCJzZXNzaW9uVmFsdWUiOiJiOGNkNzg1Mi00MTlmLTg0MjYtNWNmOC0wYjA0ZDExMDA1ZmMiLCJzZXNzaW9uSW5kZXgiOjB9LHsia2V5IjoiYXV0aC10b2tlbiIsInZhbHVlIjoiWU9VUl9BVVRIX1RPS0VOIiwiZW5hYmxlZCI6dHJ1ZSwidHlwZSI6InNlY3JldCIsInNlc3Npb25WYWx1ZSI6ImQ5TWw3bXBvS1M3Z0VmN2pxRjhhIiwic2Vzc2lvbkluZGV4IjoxfSx7ImtleSI6ImxpY2Vuc2UiLCJ2YWx1ZSI6IllPVVJfTElDRU5TRSIsImVuYWJsZWQiOnRydWUsInR5cGUiOiJkZWZhdWx0Iiwic2Vzc2lvblZhbHVlIjoiWU9VUl9MSUNFTlNFIiwic2Vzc2lvbkluZGV4IjoyfSx7ImtleSI6InVybCIsInZhbHVlIjoiYXBpLnNtYXJ0eS5jb20iLCJlbmFibGVkIjp0cnVlLCJ0eXBlIjoiZGVmYXVsdCIsInNlc3Npb25WYWx1ZSI6ImFwaS5zbWFydHkuY29tIiwic2Vzc2lvbkluZGV4IjozfV0=)
-
+Once you have completed the steps in the Configuration section above, you are ready to make API requests using Postman! Complete the following steps to make your first API request.
+1. Select the "Collection" pane on the left side of Postman. Expand the "Smarty API" folder on the left and navigate to Smarty API -> US Street Address API -> Single Address.
+2. In the pane on the right, which has the options "Params", "Authorization", "Headers" etc. click on the "Params" tab.
+3. Update the "license" parameter value using the license value on your Smarty Dashboard [subscriptions tab](https://www.smarty.com/account/subscriptions). Each license value is associated with different API requests. (insert information on what APIs use each license?)
+4. (Optional) If you want, update the parameter values to match the address you would like to send to the API, such as `street`, `city`, etc.
+5. Click the blue "Send" button on the right.
+6. The response body should appear in Postman. If there was an error, an error message will show in the response body.
+7. Continue trying Smarty APIs! Be aware that you will only have access to the APIs that use the subscription(s) that you currently have. You can sign up for free trials [here](https://www.smarty.com/account).
