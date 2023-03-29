@@ -25,12 +25,13 @@ The Smarty Postman collection uses [Postman environment variables](https://learn
 2. Click the eye icon to open the environment settings.
 3. Open your Smarty account [Dashboard](https://www.smarty.com/account).
 4. Select the [API Keys](https://www.smarty.com/account/keys) section on the left side of your Smarty Dashboard.
+![image](https://user-images.githubusercontent.com/62493355/228678037-0d0e4911-2f32-43b7-a840-9f741d46fcc9.png)
 5. Copy your Smarty API secret key information into each "current value" field in the Smarty environment:
 
     - `auth-id`
     - `auth-token`
 
-<img width="1363" alt="image" src="https://user-images.githubusercontent.com/62493355/228653244-8cf19b64-2a4c-4b7d-9a51-5c313880903c.png">
+![image](https://user-images.githubusercontent.com/62493355/228653244-8cf19b64-2a4c-4b7d-9a51-5c313880903c.png)
 6. Save your changes in the environment and start making Smarty API requests!
 
 ## Making Smarty API calls
