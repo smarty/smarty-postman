@@ -1018,13 +1018,13 @@
 			"name": "International Address Autocomplete API",
 			"item": [
 				{
-					"name": "Single International Address Autocomplete",
+					"name": "International Address Autocomplete By Search",
 					"request": {
 						"method": "GET",
 						"header": [
 							{
 								"key": "Host",
-								"value": "international-autocomplete.api.smartystreets.com",
+								"value": "international-autocomplete.api.smarty.com",
 								"type": "text"
 							},
 							{
@@ -1035,17 +1035,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://international-autocomplete.api.smartystreets.com/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&country=FRA&search=Louis&include_only_locality=Paris",
+							"raw": "https://international-autocomplete.api.smarty.com/v2/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&country=FRA&search=Louis&include_only_locality=Paris",
 							"protocol": "https",
-							"host": [
-								"international-autocomplete",
-								"api",
-								"smartystreets",
-								"com"
-							],
-							"path": [
-								"lookup"
-							],
+							"host": [ "international-autocomplete", "api", "smarty", "com" ],
+							"path": [ "v2", "lookup" ],
 							"query": [
 								{
 									"key": "auth-id",
@@ -1080,17 +1073,12 @@
 									"disabled": true
 								},
 								{
-									"key": "distance",
+									"key": "max_group_results",
 									"value": "",
 									"disabled": true
 								},
 								{
 									"key": "geolocation",
-									"value": "",
-									"disabled": true
-								},
-								{
-									"key": "include_only_administrative_area",
 									"value": "",
 									"disabled": true
 								},
@@ -1102,14 +1090,78 @@
 									"key": "include_only_postal_code",
 									"value": "",
 									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "International Address Autocomplete by Address ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "international-autocomplete.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "Referer",
+								"value": "YOUR_REFERER",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://international-autocomplete.api.smarty.com/v2/lookup/{{address_id}}?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&country=FRA",
+							"protocol": "https",
+							"host": [ "international-autocomplete", "api", "smarty", "com" ],
+							"path": [ "v2", "lookup", "{{address_id}}" ],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
 								},
 								{
-									"key": "latitude",
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE"
+								},
+								{
+									"key": "key",
+									"value": "YOUR_EMBEDDED_KEY",
+									"disabled": true
+								},
+								{
+									"key": "country",
+									"value": "FRA",
+									"description": "Required"
+								},
+								{
+									"key": "max_results",
 									"value": "",
 									"disabled": true
 								},
 								{
-									"key": "longitude",
+									"key": "max_group_results",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "geolocation",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "include_only_locality",
+									"value": "Paris"
+								},
+								{
+									"key": "include_only_postal_code",
 									"value": "",
 									"disabled": true
 								}
