@@ -1654,10 +1654,10 @@
 							}
 						],
 						"url": {
-							"raw": "https://international-autocomplete.api.smarty.com/v2/lookup/{{address_id}}?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&country=FRA",
+							"raw": "https://international-autocomplete.api.smarty.com/v2/lookup/{{address-id}}?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&country=FRA",
 							"protocol": "https",
 							"host": [ "international-autocomplete", "api", "smarty", "com" ],
-							"path": [ "v2", "lookup", "{{address_id}}" ],
+							"path": [ "v2", "lookup", "{{address-id}}" ],
 							"query": [
 								{
 									"key": "auth-id",
@@ -1735,7 +1735,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty_key}}/property?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
+							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty-key}}/property?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
 							"protocol": "https",
 							"host": [
 								"us-enrichment",
@@ -1745,7 +1745,7 @@
 							],
 							"path": [
 								"lookup",
-								"{{smarty_key}}",
+								"{{smarty-key}}",
 								"property"
 							],
 							"query": [
@@ -1795,7 +1795,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty_key}}/property?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&features=financial",
+							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty-key}}/property?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&features=financial",
 							"protocol": "https",
 							"host": [
 								"us-enrichment",
@@ -1805,7 +1805,7 @@
 							],
 							"path": [
 								"lookup",
-								"{{smarty_key}}",
+								"{{smarty-key}}",
 								"property"
 							],
 							"query": [
@@ -1940,7 +1940,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty_key}}/geo-reference?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
+							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty-key}}/geo-reference?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
 							"protocol": "https",
 							"host": [
 								"us-enrichment",
@@ -1950,7 +1950,7 @@
 							],
 							"path": [
 								"lookup",
-								"{{smarty_key}}",
+								"{{smarty-key}}",
 								"geo-reference"
 							],
 							"query": [
@@ -2000,7 +2000,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty_key}}/geo-reference/2020?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
+							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty-key}}/geo-reference/2020?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
 							"protocol": "https",
 							"host": [
 								"us-enrichment",
@@ -2010,7 +2010,7 @@
 							],
 							"path": [
 								"lookup",
-								"{{smarty_key}}",
+								"{{smarty-key}}",
 								"geo-reference",
 								"2020"
 							],
@@ -2061,7 +2061,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty_key}}/geo-reference/2010?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
+							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty-key}}/geo-reference/2010?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
 							"protocol": "https",
 							"host": [
 								"us-enrichment",
@@ -2071,7 +2071,7 @@
 							],
 							"path": [
 								"lookup",
-								"{{smarty_key}}",
+								"{{smarty-key}}",
 								"geo-reference",
 								"2010"
 							],
@@ -2122,7 +2122,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty_key}}/secondary?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
+							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty-key}}/secondary?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
 							"protocol": "https",
 							"host": [
 								"us-enrichment",
@@ -2132,7 +2132,7 @@
 							],
 							"path": [
 								"lookup",
-								"{{smarty_key}}",
+								"{{smarty-key}}",
 								"secondary"
 							],
 							"query": [
@@ -2182,7 +2182,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty_key}}/secondary/count?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
+							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty-key}}/secondary/count?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
 							"protocol": "https",
 							"host": [
 								"us-enrichment",
@@ -2192,7 +2192,7 @@
 							],
 							"path": [
 								"lookup",
-								"{{smarty_key}}",
+								"{{smarty-key}}",
 								"secondary",
 								"count"
 							],
