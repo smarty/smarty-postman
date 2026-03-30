@@ -16,7 +16,7 @@
 						"header": [
 							{
 								"key": "Host",
-								"value": "us-street.api.smartystreets.com",
+								"value": "us-street.api.smarty.com",
 								"type": "text"
 							},
 							{
@@ -27,12 +27,12 @@
 							}
 						],
 						"url": {
-							"raw": "https://us-street.api.smartystreets.com/street-address?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&street=2335+S+State+St&city=Provo&state=UT&candidates=10&match=enhanced",
+							"raw": "https://us-street.api.smarty.com/street-address?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&street=2335+S+State+St&city=Provo&state=UT&candidates=10&match=enhanced",
 							"protocol": "https",
 							"host": [
 								"us-street",
 								"api",
-								"smartystreets",
+								"smarty",
 								"com"
 							],
 							"path": [
@@ -94,7 +94,7 @@
 									"disabled": true
 								},
 								{
-									"key": "adressee",
+									"key": "addressee",
 									"value": "",
 									"disabled": true
 								},
@@ -110,6 +110,21 @@
 								{
 									"key": "match",
 									"value": "enhanced"
+								},
+								{
+									"key": "format",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "features",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "county_source",
+									"value": "",
+									"disabled": true
 								}
 							]
 						}
@@ -123,7 +138,7 @@
 						"header": [
 							{
 								"key": "Host",
-								"value": "us-street.api.smartystreets.com",
+								"value": "us-street.api.smarty.com",
 								"type": "text"
 							},
 							{
@@ -134,12 +149,12 @@
 							}
 						],
 						"url": {
-							"raw": "https://us-street.api.smartystreets.com/street-address?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&street=2335+S+State+St&city=Provo&state=UT&candidates=10&match=enhanced",
+							"raw": "https://us-street.api.smarty.com/street-address?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&street=2335+S+State+St&city=Provo&state=UT&candidates=10&match=enhanced",
 							"protocol": "https",
 							"host": [
 								"us-street",
 								"api",
-								"smartystreets",
+								"smarty",
 								"com"
 							],
 							"path": [
@@ -201,7 +216,7 @@
 									"disabled": true
 								},
 								{
-									"key": "adressee",
+									"key": "addressee",
 									"value": "",
 									"disabled": true
 								},
@@ -217,6 +232,384 @@
 								{
 									"key": "match",
 									"value": "enhanced"
+								},
+								{
+									"key": "format",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "features",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "county_source",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single Address with Project US@",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-street.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "Referer",
+								"value": "YOUR_REFERER",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://us-street.api.smarty.com/street-address?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&street=2335+S+State+St&city=Provo&state=UT&candidates=10&match=enhanced&format=project-usa",
+							"protocol": "https",
+							"host": [
+								"us-street",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"street-address"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE"
+								},
+								{
+									"key": "key",
+									"value": "YOUR_EMBEDDED_KEY",
+									"disabled": true
+								},
+								{
+									"key": "input_id",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "street",
+									"value": "2335+S+State+St"
+								},
+								{
+									"key": "street2",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "secondary",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "Provo"
+								},
+								{
+									"key": "state",
+									"value": "UT"
+								},
+								{
+									"key": "zipcode",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "lastline",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "addressee",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "urbanization",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "candidates",
+									"value": "10"
+								},
+								{
+									"key": "match",
+									"value": "enhanced"
+								},
+								{
+									"key": "format",
+									"value": "project-usa"
+								},
+								{
+									"key": "features",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "county_source",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single Address with Component Analysis",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-street.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "Referer",
+								"value": "YOUR_REFERER",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://us-street.api.smarty.com/street-address?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&street=2335+S+State+St&city=Provo&state=UT&candidates=10&match=enhanced&features=component-analysis",
+							"protocol": "https",
+							"host": [
+								"us-street",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"street-address"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE"
+								},
+								{
+									"key": "key",
+									"value": "YOUR_EMBEDDED_KEY",
+									"disabled": true
+								},
+								{
+									"key": "input_id",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "street",
+									"value": "2335+S+State+St"
+								},
+								{
+									"key": "street2",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "secondary",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "Provo"
+								},
+								{
+									"key": "state",
+									"value": "UT"
+								},
+								{
+									"key": "zipcode",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "lastline",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "addressee",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "urbanization",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "candidates",
+									"value": "10"
+								},
+								{
+									"key": "match",
+									"value": "enhanced"
+								},
+								{
+									"key": "format",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "features",
+									"value": "component-analysis"
+								},
+								{
+									"key": "county_source",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single Address with IANA Timezone",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-street.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "Referer",
+								"value": "YOUR_REFERER",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://us-street.api.smarty.com/street-address?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&street=2335+S+State+St&city=Provo&state=UT&candidates=10&match=enhanced&features=iana-timezone",
+							"protocol": "https",
+							"host": [
+								"us-street",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"street-address"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE"
+								},
+								{
+									"key": "key",
+									"value": "YOUR_EMBEDDED_KEY",
+									"disabled": true
+								},
+								{
+									"key": "input_id",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "street",
+									"value": "2335+S+State+St"
+								},
+								{
+									"key": "street2",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "secondary",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "Provo"
+								},
+								{
+									"key": "state",
+									"value": "UT"
+								},
+								{
+									"key": "zipcode",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "lastline",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "addressee",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "urbanization",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "candidates",
+									"value": "10"
+								},
+								{
+									"key": "match",
+									"value": "enhanced"
+								},
+								{
+									"key": "format",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "features",
+									"value": "iana-timezone"
+								},
+								{
+									"key": "county_source",
+									"value": "",
+									"disabled": true
 								}
 							]
 						}
@@ -235,7 +628,7 @@
 							},
 							{
 								"key": "Host",
-								"value": "us-street.api.smartystreets.com",
+								"value": "us-street.api.smarty.com",
 								"type": "text"
 							}
 						],
@@ -244,12 +637,12 @@
 							"raw": "[\n\t{\n\t\t\"street\":\"1 Santa Claus\",\n\t\t\"city\":\"North Pole\",\n\t\t\"state\":\"AK\",\n\t\t\"candidates\":10\n\t},\n\t{\n\t\t\"addressee\":\"Apple Inc\",\n\t\t\"street\":\"1 infinite loop\",\n\t\t\"city\":\"cupertino\",\n\t\t\"state\":\"CA\",\n\t\t\"zipcode\":\"95014\",\n\t\t\"candidates\":10\n\t}\n]"
 						},
 						"url": {
-							"raw": "https://us-street.api.smartystreets.com/street-address?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
+							"raw": "https://us-street.api.smarty.com/street-address?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
 							"protocol": "https",
 							"host": [
 								"us-street",
 								"api",
-								"smartystreets",
+								"smarty",
 								"com"
 							],
 							"path": [
@@ -274,7 +667,7 @@
 					"response": []
 				}
 			],
-			"description": "To get started, visit [https://www.smarty.com/account](https://www.smarty.com/account) and login with your credentials. Then, go to your API Keys and copy the auth-id and auth-token into the Current Value fields in the environment.\n\nIf at any point you're not sure what to do, documentation for the API and the variables associated with it can be found at: [https://www.smarty.com/docs/cloud/us-street-api](https://www.smarty.com/docs/cloud/us-street-api)"
+			"description": "To get started, visit [https://www.smarty.com/account](https://www.smarty.com/account) and login with your credentials. Then, go to your API Keys and copy the auth-id and auth-token into the Current Value fields in the environment.\n\nIf at any point you're not sure what to do, documentation for the API and the variables associated with it can be found at: [https://www.smarty.com/docs/apis/us-street-api/reference](https://www.smarty.com/docs/apis/us-street-api/reference)"
 		},
 		{
 			"name": "US ZIP Code API",
