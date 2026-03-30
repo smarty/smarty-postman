@@ -1185,7 +1185,7 @@
 						"header": [
 							{
 								"key": "Host",
-								"value": "international-street.api.smartystreets.com",
+								"value": "international-street.api.smarty.com",
 								"type": "text"
 							},
 							{
@@ -1196,12 +1196,12 @@
 							}
 						],
 						"url": {
-							"raw": "https://international-street.api.smartystreets.com/verify?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&country=Brazil&address1=Rua+Padre+Antonio+D%27Angelo+121&address2=Casa+Verde",
+							"raw": "https://international-street.api.smarty.com/verify?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&country=Brazil&address1=Rua+Padre+Antonio+D%27Angelo+121&address2=Casa+Verde",
 							"protocol": "https",
 							"host": [
 								"international-street",
 								"api",
-								"smartystreets",
+								"smarty",
 								"com"
 							],
 							"path": [
@@ -1289,6 +1289,11 @@
 									"key": "postal_code",
 									"value": "",
 									"disabled": true
+								},
+								{
+									"key": "features",
+									"value": "",
+									"disabled": true
 								}
 							]
 						}
@@ -1302,17 +1307,17 @@
 						"header": [
 							{
 								"key": "Host",
-								"value": "international-street.api.smartystreets.com",
+								"value": "international-street.api.smarty.com",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "https://international-street.api.smartystreets.com/verify?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&country=Brazil&geocode=true&address1=Rua+Padre+Antonio+D%27Angelo+121&address2=Casa+Verde&postal_code=02516-040",
+							"raw": "https://international-street.api.smarty.com/verify?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&country=Brazil&geocode=true&address1=Rua+Padre+Antonio+D%27Angelo+121&address2=Casa+Verde&postal_code=02516-040",
 							"protocol": "https",
 							"host": [
 								"international-street",
 								"api",
-								"smartystreets",
+								"smarty",
 								"com"
 							],
 							"path": [
@@ -1398,6 +1403,130 @@
 								{
 									"key": "postal_code",
 									"value": "02516-040"
+								},
+								{
+									"key": "features",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Geocode with Classification",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "international-street.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "Referer",
+								"value": "YOUR_REFERER",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://international-street.api.smarty.com/verify?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&country=Brazil&geocode=true&address1=Rua+Padre+Antonio+D%27Angelo+121&address2=Casa+Verde&postal_code=02516-040&features=geocode-classification",
+							"protocol": "https",
+							"host": [
+								"international-street",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"verify"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE"
+								},
+								{
+									"key": "key",
+									"value": "YOUR_EMBEDDED_KEY",
+									"disabled": true
+								},
+								{
+									"key": "input_id",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "country",
+									"value": "Brazil",
+									"description": "Required"
+								},
+								{
+									"key": "geocode",
+									"value": "true"
+								},
+								{
+									"key": "language",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "freeform",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "address1",
+									"value": "Rua+Padre+Antonio+D%27Angelo+121",
+									"description": "Required - First line of address"
+								},
+								{
+									"key": "address2",
+									"value": "Casa+Verde",
+									"description": "Second line of address (if any)"
+								},
+								{
+									"key": "address3",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "address4",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "organization",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "locality",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "administrative_area",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "postal_code",
+									"value": "02516-040"
+								},
+								{
+									"key": "features",
+									"value": "geocode-classification"
 								}
 							]
 						}
@@ -1405,7 +1534,7 @@
 					"response": []
 				}
 			],
-			"description": "To get started, visit [https://www.smarty.com/account](https://www.smarty.com/account) and login with your credentials. Then, go to your API Keys and copy the auth-id and auth-token into the Current Value fields in the environment.\n\nIf at any point you're not sure what to do, documentation for the API and the variables associated with it can be found at: [https://www.smarty.com/docs/cloud/international-street-api](https://www.smarty.com/docs/cloud/international-street-api)"
+			"description": "To get started, visit [https://www.smarty.com/account](https://www.smarty.com/account) and login with your credentials. Then, go to your API Keys and copy the auth-id and auth-token into the Current Value fields in the environment.\n\nIf at any point you're not sure what to do, documentation for the API and the variables associated with it can be found at: [https://www.smarty.com/docs/apis/international-street-api/reference](https://www.smarty.com/docs/apis/international-street-api/reference)"
 		},
 		{
 			"name": "International Address Autocomplete API",
