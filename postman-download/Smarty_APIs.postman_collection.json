@@ -1122,17 +1122,17 @@
 							},
 							{
 								"key": "Host",
-								"value": "us-reverse-geo.api.smartystreets.com",
+								"value": "us-reverse-geo.api.smarty.com",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "https://us-reverse-geo.api.smartystreets.com/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&latitude=40.202583&longitude=-111.62196",
+							"raw": "https://us-reverse-geo.api.smarty.com/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&latitude=40.202583&longitude=-111.62196",
 							"protocol": "https",
 							"host": [
 								"us-reverse-geo",
 								"api",
-								"smartystreets",
+								"smarty",
 								"com"
 							],
 							"path": [
@@ -1153,7 +1153,7 @@
 								},
 								{
 									"key": "key",
-									"value": "YOUR_EMBEDED_KEY",
+									"value": "YOUR_EMBEDDED_KEY",
 									"disabled": true
 								},
 								{
@@ -1163,6 +1163,11 @@
 								{
 									"key": "longitude",
 									"value": "-111.62196"
+								},
+								{
+									"key": "source",
+									"value": "",
+									"disabled": true
 								}
 							]
 						}
@@ -1170,7 +1175,7 @@
 					"response": []
 				}
 			],
-			"description": "To get started, visit [https://www.smarty.com/account](https://www.smarty.com/account) and login with your credentials. Then, go to your API Keys and copy the auth-id and auth-token into the Current Value fields in the environment.\n\nIf at any point you're not sure what to do, documentation for the API and the variables associated with it can be found at: [https://www.smarty.com/docs/cloud/us-reverse-geo-api](https://www.smarty.com/docs/cloud/us-reverse-geo-api)"
+			"description": "To get started, visit [https://www.smarty.com/account](https://www.smarty.com/account) and login with your credentials. Then, go to your API Keys and copy the auth-id and auth-token into the Current Value fields in the environment.\n\nIf at any point you're not sure what to do, documentation for the API and the variables associated with it can be found at: [https://www.smarty.com/docs/apis/us-reverse-geo-api/reference](https://www.smarty.com/docs/apis/us-reverse-geo-api/reference)"
 		},
 		{
 			"name": "International Street Address API",
