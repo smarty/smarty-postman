@@ -1859,7 +1859,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://us-enrichment.api.smarty.com/lookup/search/property?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&street=1400+Sandhill+Rd&city=Orem&state=UT&zipcode=84058",
+							"raw": "https://us-enrichment.api.smarty.com/lookup/search/property?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&street=2335+S+State+St&city=Provo&state=UT",
 							"protocol": "https",
 							"host": [
 								"us-enrichment",
@@ -1903,11 +1903,11 @@
 								},
 								{
 									"key": "street",
-									"value": "1400+Sandhill+Rd"
+									"value": "2335+S+State+St"
 								},
 								{
 									"key": "city",
-									"value": "Orem"
+									"value": "Provo"
 								},
 								{
 									"key": "state",
@@ -1915,7 +1915,8 @@
 								},
 								{
 									"key": "zipcode",
-									"value": "84058"
+									"value": "",
+									"disabled": true
 								}
 							]
 						}
@@ -2243,7 +2244,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://us-enrichment.api.smarty.com/lookup/search/secondary?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&street=1400+Sandhill+Rd&city=Orem&state=UT&zipcode=84058",
+							"raw": "https://us-enrichment.api.smarty.com/lookup/search/secondary?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&street=2335+S+State+St&city=Provo&state=UT",
 							"protocol": "https",
 							"host": [
 								"us-enrichment",
@@ -2287,11 +2288,11 @@
 								},
 								{
 									"key": "street",
-									"value": "1400+Sandhill+Rd"
+									"value": "2335+S+State+St"
 								},
 								{
 									"key": "city",
-									"value": "Orem"
+									"value": "Provo"
 								},
 								{
 									"key": "state",
@@ -2299,7 +2300,8 @@
 								},
 								{
 									"key": "zipcode",
-									"value": "84058"
+									"value": "",
+									"disabled": true
 								}
 							]
 						}
