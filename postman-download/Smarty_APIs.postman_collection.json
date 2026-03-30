@@ -1035,12 +1035,7 @@
 						"header": [
 							{
 								"key": "Content-Type",
-								"value": "text/plain",
-								"type": "text"
-							},
-							{
-								"key": "charset",
-								"value": "utf-8",
+								"value": "text/plain; charset=utf-8",
 								"type": "text"
 							},
 							{
@@ -1055,12 +1050,12 @@
 							"raw": "There are addresses everywhere.\n1109 Ninth 85007\nSmarty can find them.\n3785 Las Vegs Av.\nLos Vegas, Nevada\nThat is all."
 						},
 						"url": {
-							"raw": "https://us-extract.api.smartystreets.com/?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&match=enhanced",
+							"raw": "https://us-extract.api.smarty.com/?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&match=enhanced",
 							"protocol": "https",
 							"host": [
 								"us-extract",
 								"api",
-								"smartystreets",
+								"smarty",
 								"com"
 							],
 							"path": [
@@ -1109,7 +1104,7 @@
 					"response": []
 				}
 			],
-			"description": "To get started, visit [https://www.smarty.com/account](https://www.smarty.com/account) and login with your credentials. Then, go to your API Keys and copy the auth-id and auth-token into the Current Value fields in the environment.\n\nIf at any point you're not sure what to do, documentation for the API and the variables associated with it can be found at: [https://www.smarty.com/docs/cloud/us-extract-api](https://www.smarty.com/docs/cloud/us-extract-api)"
+			"description": "To get started, visit [https://www.smarty.com/account](https://www.smarty.com/account) and login with your credentials. Then, go to your API Keys and copy the auth-id and auth-token into the Current Value fields in the environment.\n\nIf at any point you're not sure what to do, documentation for the API and the variables associated with it can be found at: [https://www.smarty.com/docs/apis/us-extract-api/reference](https://www.smarty.com/docs/apis/us-extract-api/reference)"
 		},
 		{
 			"name": "US Reverse Geocoding API",
