@@ -49,7 +49,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "key",
@@ -171,7 +172,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "key",
@@ -293,7 +295,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "key",
@@ -414,7 +417,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "key",
@@ -535,7 +539,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "key",
@@ -659,7 +664,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								}
 							]
 						}
@@ -712,7 +718,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE"
+									"value": "YOUR_LICENSE",
+									"disabled": true
 								},
 								{
 									"key": "key",
@@ -786,7 +793,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								}
 							]
 						}
@@ -839,7 +847,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE"
+									"value": "YOUR_LICENSE",
+									"disabled": true
 								},
 								{
 									"key": "key",
@@ -948,7 +957,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "key",
@@ -1072,7 +1082,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "html",
@@ -1149,7 +1160,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "key",
@@ -1220,7 +1232,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "key",
@@ -1336,7 +1349,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "key",
@@ -1456,7 +1470,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "key",
@@ -1574,7 +1589,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "key",
@@ -1653,7 +1669,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "key",
@@ -1742,7 +1759,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "include",
@@ -1801,7 +1819,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "include",
@@ -1864,7 +1883,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "include",
@@ -1944,7 +1964,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "include",
@@ -2004,7 +2025,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "include",
@@ -2064,7 +2086,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "include",
@@ -2123,7 +2146,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "include",
@@ -2183,7 +2207,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "include",
@@ -2242,7 +2267,8 @@
 								},
 								{
 									"key": "license",
-									"value": "YOUR_LICENSE_VALUE"
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
 								},
 								{
 									"key": "include",
