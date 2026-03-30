@@ -679,7 +679,7 @@
 						"header": [
 							{
 								"key": "Host",
-								"value": "us-zipcode.api.smartystreets.com",
+								"value": "us-zipcode.api.smarty.com",
 								"type": "text"
 							},
 							{
@@ -690,12 +690,12 @@
 							}
 						],
 						"url": {
-							"raw": "https://us-zipcode.api.smartystreets.com/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE&zipcode=84601&city&state",
+							"raw": "https://us-zipcode.api.smarty.com/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE&zipcode=84601&city&state",
 							"protocol": "https",
 							"host": [
 								"us-zipcode",
 								"api",
-								"smartystreets",
+								"smarty",
 								"com"
 							],
 							"path": [
@@ -730,11 +730,13 @@
 								},
 								{
 									"key": "city",
-									"value": null
+									"value": "",
+									"disabled": true
 								},
 								{
 									"key": "state",
-									"value": null
+									"value": "",
+									"disabled": true
 								}
 							]
 						}
@@ -753,7 +755,7 @@
 							},
 							{
 								"key": "Host",
-								"value": "us-zipcode.api.smartystreets.com",
+								"value": "us-zipcode.api.smarty.com",
 								"type": "text"
 							}
 						],
@@ -762,12 +764,12 @@
 							"raw": "[\n\t{\n\t\t\"city\":\"North Pole\",\n\t\t\"state\":\"AK\"\n\t},\n\t{\n\t\t\"zipcode\":\"12345\"\n\t},\n\t{\n\t\t\"city\":\"cupertino\",\n\t\t\"state\":\"CA\",\n\t\t\"zipcode\":\"95014\"\n\t}\n]"
 						},
 						"url": {
-							"raw": "https://us-zipcode.api.smartystreets.com/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
+							"raw": "https://us-zipcode.api.smarty.com/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
 							"protocol": "https",
 							"host": [
 								"us-zipcode",
 								"api",
-								"smartystreets",
+								"smarty",
 								"com"
 							],
 							"path": [
@@ -792,7 +794,7 @@
 					"response": []
 				}
 			],
-			"description": "To get started, visit [https://www.smarty.com/account](https://www.smarty.com/account) and login with your credentials. Then, go to your API Keys and copy the auth-id and auth-token into the Current Value fields in the environment.\n\nIf at any point you're not sure what to do, documentation for the API and the variables associated with it can be found at: [https://www.smarty.com/docs/cloud/us-zipcode-api](https://www.smarty.com/docs/cloud/us-zipcode-api)"
+			"description": "To get started, visit [https://www.smarty.com/account](https://www.smarty.com/account) and login with your credentials. Then, go to your API Keys and copy the auth-id and auth-token into the Current Value fields in the environment.\n\nIf at any point you're not sure what to do, documentation for the API and the variables associated with it can be found at: [https://www.smarty.com/docs/apis/us-zipcode-api/reference](https://www.smarty.com/docs/apis/us-zipcode-api/reference)"
 		},
 		{
 			"name": "US Autocomplete Pro API",
