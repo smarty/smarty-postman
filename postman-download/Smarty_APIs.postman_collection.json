@@ -1565,6 +1565,592 @@
 				}
 			],
 			"description": "To get started, visit [https://www.smarty.com/account](https://www.smarty.com/account) and login with your credentials. Then, go to your API Keys and copy the auth-id and auth-token into the Current Value fields in the environment.\n\nIf at any point you're not sure what to do, documentation for the API and the variables associated with it can be found at: [https://www.smarty.com/docs/cloud/international-address-autocomplete-api](https://www.smarty.com/docs/cloud/international-address-autocomplete-api)"
+		},
+		{
+			"name": "US Address Enrichment API",
+			"item": [
+				{
+					"name": "Property Lookup",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-enrichment.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "ETag",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty_key}}/property?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
+							"protocol": "https",
+							"host": [
+								"us-enrichment",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"lookup",
+								"{{smarty_key}}",
+								"property"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE"
+								},
+								{
+									"key": "include",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "exclude",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Property Lookup with Financial History",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-enrichment.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "ETag",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty_key}}/property?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&features=financial",
+							"protocol": "https",
+							"host": [
+								"us-enrichment",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"lookup",
+								"{{smarty_key}}",
+								"property"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE"
+								},
+								{
+									"key": "include",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "exclude",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "features",
+									"value": "financial"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Property Address Search",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-enrichment.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "ETag",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://us-enrichment.api.smarty.com/lookup/search/property?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&street=1400+Sandhill+Rd&city=Orem&state=UT&zipcode=84058",
+							"protocol": "https",
+							"host": [
+								"us-enrichment",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"lookup",
+								"search",
+								"property"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE"
+								},
+								{
+									"key": "include",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "exclude",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "freeform",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "street",
+									"value": "1400+Sandhill+Rd"
+								},
+								{
+									"key": "city",
+									"value": "Orem"
+								},
+								{
+									"key": "state",
+									"value": "UT"
+								},
+								{
+									"key": "zipcode",
+									"value": "84058"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Geo-Reference Lookup",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-enrichment.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "ETag",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty_key}}/geo-reference?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
+							"protocol": "https",
+							"host": [
+								"us-enrichment",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"lookup",
+								"{{smarty_key}}",
+								"geo-reference"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE"
+								},
+								{
+									"key": "include",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "exclude",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Geo-Reference Lookup 2020",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-enrichment.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "ETag",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty_key}}/geo-reference/2020?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
+							"protocol": "https",
+							"host": [
+								"us-enrichment",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"lookup",
+								"{{smarty_key}}",
+								"geo-reference",
+								"2020"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE"
+								},
+								{
+									"key": "include",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "exclude",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Geo-Reference Lookup 2010",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-enrichment.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "ETag",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty_key}}/geo-reference/2010?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
+							"protocol": "https",
+							"host": [
+								"us-enrichment",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"lookup",
+								"{{smarty_key}}",
+								"geo-reference",
+								"2010"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE"
+								},
+								{
+									"key": "include",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "exclude",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Secondary Lookup",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-enrichment.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "ETag",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty_key}}/secondary?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
+							"protocol": "https",
+							"host": [
+								"us-enrichment",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"lookup",
+								"{{smarty_key}}",
+								"secondary"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE"
+								},
+								{
+									"key": "include",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "exclude",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Secondary Count",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-enrichment.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "ETag",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://us-enrichment.api.smarty.com/lookup/{{smarty_key}}/secondary/count?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE",
+							"protocol": "https",
+							"host": [
+								"us-enrichment",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"lookup",
+								"{{smarty_key}}",
+								"secondary",
+								"count"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE"
+								},
+								{
+									"key": "include",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "exclude",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Secondary Address Search",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-enrichment.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "ETag",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://us-enrichment.api.smarty.com/lookup/search/secondary?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&street=1400+Sandhill+Rd&city=Orem&state=UT&zipcode=84058",
+							"protocol": "https",
+							"host": [
+								"us-enrichment",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"lookup",
+								"search",
+								"secondary"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE"
+								},
+								{
+									"key": "include",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "exclude",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "freeform",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "street",
+									"value": "1400+Sandhill+Rd"
+								},
+								{
+									"key": "city",
+									"value": "Orem"
+								},
+								{
+									"key": "state",
+									"value": "UT"
+								},
+								{
+									"key": "zipcode",
+									"value": "84058"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "To get started, visit [https://www.smarty.com/account](https://www.smarty.com/account) and login with your credentials. Then, go to your API Keys and copy the auth-id and auth-token into the Current Value fields in the environment.\n\nIf at any point you're not sure what to do, documentation for the API and the variables associated with it can be found at: [https://www.smarty.com/docs/apis/us-enrichment-api/reference](https://www.smarty.com/docs/apis/us-enrichment-api/reference)"
 		}
 	]
 }
