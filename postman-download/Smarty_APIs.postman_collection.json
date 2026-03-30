@@ -812,17 +812,17 @@
 							},
 							{
 								"key": "Host",
-								"value": "us-autocomplete-pro.api.smartystreets.com",
+								"value": "us-autocomplete-pro.api.smarty.com",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "https://us-autocomplete-pro.api.smartystreets.com/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE&search=123+mai&include_only_states=ALLSTATES&prefer_geolocation=none",
+							"raw": "https://us-autocomplete-pro.api.smarty.com/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE&search=123+mai&include_only_states=ALLSTATES&prefer_geolocation=none",
 							"protocol": "https",
 							"host": [
 								"us-autocomplete-pro",
 								"api",
-								"smartystreets",
+								"smarty",
 								"com"
 							],
 							"path": [
@@ -866,7 +866,7 @@
 									"value": "ALLSTATES"
 								},
 								{
-									"key": "include_only_zio_codes",
+									"key": "include_only_zip_codes",
 									"value": "",
 									"disabled": true
 								},
@@ -921,17 +921,17 @@
 						"header": [
 							{
 								"key": "Host",
-								"value": "us-autocomplete-pro.api.smartystreets.com",
+								"value": "us-autocomplete-pro.api.smarty.com",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "https://us-autocomplete-pro.api.smartystreets.com/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&search=123+mai&prefer_states=ut&selected=123+N+Main+St+Apt+(22)+Logan+UT+84321",
+							"raw": "https://us-autocomplete-pro.api.smarty.com/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&search=123+mai&prefer_states=ut&selected=123+N+Main+St+Apt+(22)+Logan+UT+84321",
 							"protocol": "https",
 							"host": [
 								"us-autocomplete-pro",
 								"api",
-								"smartystreets",
+								"smarty",
 								"com"
 							],
 							"path": [
@@ -975,7 +975,7 @@
 									"disabled": true
 								},
 								{
-									"key": "include_only_zio_codes",
+									"key": "include_only_zip_codes",
 									"value": "",
 									"disabled": true
 								},
@@ -1023,7 +1023,7 @@
 					"response": []
 				}
 			],
-			"description": "To get started, visit [https://www.smarty.com/account](https://www.smarty.com/account) and login with your credentials. Then, go to your API Keys and copy the auth-id and auth-token into the Current Value fields in the environment.\n\nIf at any point you're not sure what to do, documentation for the API and the variables associated with it can be found at: [https://www.smarty.com/docs/cloud/us-autocomplete-pro-api](https://www.smarty.com/docs/cloud/us-autocomplete-pro-api)"
+			"description": "To get started, visit [https://www.smarty.com/account](https://www.smarty.com/account) and login with your credentials. Then, go to your API Keys and copy the auth-id and auth-token into the Current Value fields in the environment.\n\nIf at any point you're not sure what to do, documentation for the API and the variables associated with it can be found at: [https://www.smarty.com/docs/apis/us-autocomplete-pro-api/reference](https://www.smarty.com/docs/apis/us-autocomplete-pro-api/reference)"
 		},
 		{
 			"name": "US Extract API",
