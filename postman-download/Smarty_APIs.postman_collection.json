@@ -1576,8 +1576,16 @@
 						"url": {
 							"raw": "https://international-autocomplete.api.smarty.com/v2/lookup?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&country=FRA&search=Louis&include_only_locality=Paris",
 							"protocol": "https",
-							"host": [ "international-autocomplete", "api", "smarty", "com" ],
-							"path": [ "v2", "lookup" ],
+							"host": [
+								"international-autocomplete",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"v2",
+								"lookup"
+							],
 							"query": [
 								{
 									"key": "auth-id",
@@ -1656,8 +1664,17 @@
 						"url": {
 							"raw": "https://international-autocomplete.api.smarty.com/v2/lookup/{{address-id}}?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&country=FRA",
 							"protocol": "https",
-							"host": [ "international-autocomplete", "api", "smarty", "com" ],
-							"path": [ "v2", "lookup", "{{address-id}}" ],
+							"host": [
+								"international-autocomplete",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"v2",
+								"lookup",
+								"{{address-id}}"
+							],
 							"query": [
 								{
 									"key": "auth-id",
@@ -1924,6 +1941,92 @@
 					"response": []
 				},
 				{
+					"name": "Property Financial Address Search",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-enrichment.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "ETag",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://us-enrichment.api.smarty.com/lookup/search/property?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&features=financial&street=2335+S+State+St&city=Provo&state=UT",
+							"protocol": "https",
+							"host": [
+								"us-enrichment",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"lookup",
+								"search",
+								"property"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
+								},
+								{
+									"key": "include",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "exclude",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "features",
+									"value": "financial"
+								},
+								{
+									"key": "freeform",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "street",
+									"value": "2335+S+State+St"
+								},
+								{
+									"key": "city",
+									"value": "Provo"
+								},
+								{
+									"key": "state",
+									"value": "UT"
+								},
+								{
+									"key": "zipcode",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Geo-Reference Lookup",
 					"request": {
 						"method": "GET",
@@ -1975,6 +2078,88 @@
 								},
 								{
 									"key": "exclude",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Geo-Reference Address Search",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-enrichment.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "ETag",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://us-enrichment.api.smarty.com/lookup/search/geo-reference?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&street=2335+S+State+St&city=Provo&state=UT",
+							"protocol": "https",
+							"host": [
+								"us-enrichment",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"lookup",
+								"search",
+								"geo-reference"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
+								},
+								{
+									"key": "include",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "exclude",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "freeform",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "street",
+									"value": "2335+S+State+St"
+								},
+								{
+									"key": "city",
+									"value": "Provo"
+								},
+								{
+									"key": "state",
+									"value": "UT"
+								},
+								{
+									"key": "zipcode",
 									"value": "",
 									"disabled": true
 								}
@@ -2045,6 +2230,89 @@
 					"response": []
 				},
 				{
+					"name": "Geo-Reference Address Search 2020",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-enrichment.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "ETag",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://us-enrichment.api.smarty.com/lookup/search/geo-reference/2020?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&street=2335+S+State+St&city=Provo&state=UT",
+							"protocol": "https",
+							"host": [
+								"us-enrichment",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"lookup",
+								"search",
+								"geo-reference",
+								"2020"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
+								},
+								{
+									"key": "include",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "exclude",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "freeform",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "street",
+									"value": "2335+S+State+St"
+								},
+								{
+									"key": "city",
+									"value": "Provo"
+								},
+								{
+									"key": "state",
+									"value": "UT"
+								},
+								{
+									"key": "zipcode",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Geo-Reference Lookup 2010",
 					"request": {
 						"method": "GET",
@@ -2097,6 +2365,89 @@
 								},
 								{
 									"key": "exclude",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Geo-Reference Address Search 2010",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-enrichment.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "ETag",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://us-enrichment.api.smarty.com/lookup/search/geo-reference/2010?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&street=2335+S+State+St&city=Provo&state=UT",
+							"protocol": "https",
+							"host": [
+								"us-enrichment",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"lookup",
+								"search",
+								"geo-reference",
+								"2010"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
+								},
+								{
+									"key": "include",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "exclude",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "freeform",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "street",
+									"value": "2335+S+State+St"
+								},
+								{
+									"key": "city",
+									"value": "Provo"
+								},
+								{
+									"key": "state",
+									"value": "UT"
+								},
+								{
+									"key": "zipcode",
 									"value": "",
 									"disabled": true
 								}
@@ -2256,6 +2607,89 @@
 								"lookup",
 								"search",
 								"secondary"
+							],
+							"query": [
+								{
+									"key": "auth-id",
+									"value": "{{auth-id}}"
+								},
+								{
+									"key": "auth-token",
+									"value": "{{auth-token}}"
+								},
+								{
+									"key": "license",
+									"value": "YOUR_LICENSE_VALUE",
+									"disabled": true
+								},
+								{
+									"key": "include",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "exclude",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "freeform",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "street",
+									"value": "2335+S+State+St"
+								},
+								{
+									"key": "city",
+									"value": "Provo"
+								},
+								{
+									"key": "state",
+									"value": "UT"
+								},
+								{
+									"key": "zipcode",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Secondary Count Address Search",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Host",
+								"value": "us-enrichment.api.smarty.com",
+								"type": "text"
+							},
+							{
+								"key": "ETag",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://us-enrichment.api.smarty.com/lookup/search/secondary/count?auth-id={{auth-id}}&auth-token={{auth-token}}&license=YOUR_LICENSE_VALUE&street=2335+S+State+St&city=Provo&state=UT",
+							"protocol": "https",
+							"host": [
+								"us-enrichment",
+								"api",
+								"smarty",
+								"com"
+							],
+							"path": [
+								"lookup",
+								"search",
+								"secondary",
+								"count"
 							],
 							"query": [
 								{
